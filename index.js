@@ -269,7 +269,7 @@ genBtn.addEventListener("click", (event) => {
     partiNavn.value
   } og ble dannet i '9${Math.floor(
     Math.random() * 9
-  )}. På grunn av uenigheter med ${
+  )}, på grunn av uenigheter med ${
     partiArray[Math.floor(Math.random() * partiArray.length)]
   } pga forskjeller i ${
     politikkArray[Math.floor(Math.random() * politikkArray.length)]
@@ -277,7 +277,7 @@ genBtn.addEventListener("click", (event) => {
     partiArray[Math.floor(Math.random() * partiArray.length)]
   } ang ${
     politikkArray[Math.floor(Math.random() * politikkArray.length)]
-  }. Vi ønsker jo som alle at norsk kultur kun skal baseres på ${
+  }. Vi ønsker jo tradisjonen sier, at norsk kultur kun skal baseres på ${
     landArray[Math.floor(Math.random() * landArray.length)]
   }, som alle var enig om i Riksforsamlingen i 1814.
   Se gjerne på punktene våres nedenfor, og vi håper vi også kan gi noen en stemme!`;
