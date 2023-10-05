@@ -88,14 +88,20 @@ main {
 @media only screen and (max-width: 1000px) {
   body {
     height: 100vh;
+    place-content: start;
   }
   main {
-    height: 100vh;
+    height: 175vh;
     width: 100vw;
     border: none;
     box-shadow: none;
     border-radius: 0;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+  .main2 {
+    height: 100%;
+    box-shadow: 2em 0 0 #d90429;
+    font-size: 14px;
   }
 }
