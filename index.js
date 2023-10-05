@@ -311,7 +311,7 @@ genBtn.addEventListener("click", (event) => {
         denyArray[Math.floor(Math.random() * denyArray.length)]
       } ${prepArray[Math.floor(Math.random() * prepArray.length)]} ${
         actArray[Math.floor(Math.random() * actArray.length)]
-      }, vi vil heller ${
+      }, vi vil ${denyArray[Math.floor(Math.random() * denyArray.length)]} ${
         actArray[Math.floor(Math.random() * actArray.length)]
       } angående ${objArray[Math.floor(Math.random() * objArray.length)]}`;
     } else if (selector === 2) {
