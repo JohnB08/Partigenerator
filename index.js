@@ -4,6 +4,7 @@ let bulletNr = document.getElementById("Bulletnr");
 let bulletPoints = document.querySelectorAll("li");
 let genNavn = document.getElementById("Navn");
 let yttringDesc = document.getElementById("Yttringsfrihet");
+let partyDesc = document.getElementById("formaal");
 const subjArray = [
   "Menn",
   "Kvinner",
@@ -77,6 +78,7 @@ const subjArray = [
   "Helsetjenesten",
   "Den Norske Skole",
   "Den Norske Bank",
+  "Den Norske Kirke",
   "Heimevernet",
   "Hæren",
   "Bompengeselskap",
@@ -91,6 +93,7 @@ const objArray = [
   "Rettsystemet",
   "Helsevesenet",
   "Polititjenesten",
+  "wokeness",
   "Sikkerhetstjenesten",
   "UDI",
   "Offentlig Transport",
@@ -235,6 +238,26 @@ const sinArray = [
   "RIGHTTHINK",
   "norskbruk",
 ];
+const partiArray = [
+  "FRP",
+  "AP",
+  "SV",
+  "Høyre",
+  "Rødt",
+  "Venstre",
+  "SP",
+  "Industripartiet",
+];
+const politikkArray = [
+  "Invandringspolitikk",
+  "Innenrikspolitikk",
+  "Utenrikspolitikk",
+  "Religion",
+  "Identitestpolitikk",
+  "Utstrøkspolitikk",
+  "Industripolitikk",
+  "Økonomisk styre",
+];
 /* console.log(subjArray);
 console.log(Math.floor(Math.random() * subjArray.length)); */
 /* console.log(bulletPoints); */
@@ -242,17 +265,36 @@ genBtn.addEventListener("click", (event) => {
   genNavn.textContent = partiNavn.value;
   subjArray.pop();
   subjArray.push(partiNavn.value);
-  yttringDesc.textContent = `Yttringsfriheten ${
+  partyDesc.textContent = `Vi er ${
+    partiNavn.value
+  } og ble dannet i '9${Math.floor(
+    Math.random() * 9
+  )}. På grunn av uenigheter med ${
+    partiArray[Math.floor(Math.random() * partiArray.length)]
+  } pga forskjeller i ${
+    politikkArray[Math.floor(Math.random() * politikkArray.length)]
+  }. Vi er også sterkt uenig med ${
+    partiArray[Math.floor(Math.random() * partiArray.length)]
+  } ang ${
+    politikkArray[Math.floor(Math.random() * politikkArray.length)]
+  }. Vi ønsker jo som alle at norsk kultur kun skal baseres på ${
+    landArray[Math.floor(Math.random() * landArray.length)]
+  }, som alle var enig om i Riksforsamlingen i 1814.
+  Se gjerne på punktene våres nedenfor, og vi håper vi også kan gi noen en stemme!`;
+  yttringDesc.textContent = `❕  Yttringsfriheten ${
     comArray[Math.floor(Math.random() * comArray.length)]
   } ${denyArray[Math.floor(Math.random() * denyArray.length)]} ${
     extArray[Math.floor(Math.random() * extArray.length)]
   } og er derfor ABSOLUTT! Bare ${
     sinArray[Math.floor(Math.random() * sinArray.length)]
-  } er straffbart`;
+  } er straffbart  ❕`;
   for (let i = 0; i < bulletNr.value - 1; i++) {
     selector = Math.floor(Math.random() * 4);
     if (selector === 0) {
       bulletPoints[i].textContent =
+        "❕" +
+        " " +
+        " " +
         subjArray[Math.floor(Math.random() * subjArray.length)] +
         " " +
         comArray[Math.floor(Math.random() * comArray.length)] +
@@ -263,7 +305,7 @@ genBtn.addEventListener("click", (event) => {
         " " +
         actArray[Math.floor(Math.random() * actArray.length)];
     } else if (selector === 1) {
-      bulletPoints[i].textContent = `${
+      bulletPoints[i].textContent = `❕  ${
         subjArray[Math.floor(Math.random() * subjArray.length)]
       } ${comArray[Math.floor(Math.random() * comArray.length)]} ${
         denyArray[Math.floor(Math.random() * denyArray.length)]
@@ -279,7 +321,7 @@ genBtn.addEventListener("click", (event) => {
         objArray[Math.floor(Math.random() * objArray.length)]
       }`;
     } else {
-      bulletPoints[i].textContent = `Vi stiller oss bak ${
+      bulletPoints[i].textContent = `❕  Vi stiller oss bak ${
         subjArray[Math.floor(Math.random() * subjArray.length)]
       } sitt forslag om at ${
         subjArray[Math.floor(Math.random() * subjArray.length)]

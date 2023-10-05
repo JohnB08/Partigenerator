@@ -14,7 +14,7 @@ body {
 }
 main {
   width: 80vw;
-  height: 80vh;
+  height: 90vh;
   display: inherit;
   grid-template-columns: 1fr 1fr;
   background: #edf2f4;
@@ -49,7 +49,7 @@ main {
 }
 .main input {
   border: 0.2em solid #2b2d42;
-  padding: 0.2em 1em;
+  padding: 0.5em 1em;
   border-radius: 1em;
 }
 .main button {
@@ -68,7 +68,7 @@ main {
   background: #d90429;
 }
 .main2 {
-  height: 90%;
+  height: 100%;
   background: #2b2d42;
   align-self: center;
   padding: 5%;
@@ -78,9 +78,12 @@ main {
 .main2 h1 {
   color: #edf2f4;
 }
+.main2 p {
+  font-weight: bold;
+}
 .main2 .partiprogram {
   list-style: none;
-  height: 75%;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -95,16 +98,18 @@ main {
     place-content: start;
   }
   main {
-    height: 175vh;
+    height: 200vh;
     width: 100vw;
     border: none;
     box-shadow: none;
     border-radius: 0;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 0;
   }
   .main2 {
     height: 100%;
     box-shadow: 2em 0 0 #d90429;
+    justify-content: space-between;
   }
 }
