@@ -173,12 +173,12 @@ const actArray = [
   "bli straffet",
   "få utbetalt av statskassa",
   "fjernes",
-  "lyttes på",
-  "taes til betraktning",
+  "bli hørt",
+  "ta til betraktning",
   "avvikles",
-  "frarådes mer makt",
-  "oppfordres til mer makt",
-  "hyres inn",
+  "fraråde mer makt",
+  "oppfordre til mer makt",
+  "hyre inn",
   "gå av",
   "kjøre mindre bil",
   "kjøre mer bil",
@@ -195,7 +195,7 @@ genBtn.addEventListener("click", (event) => {
   subjArray.pop();
   subjArray.push(partiNavn.value);
   for (let i = 0; i < bulletNr.value; i++) {
-    selector = Math.floor(Math.random() * 3);
+    selector = Math.floor(Math.random() * 4);
     if (selector === 0) {
       bulletPoints[i].textContent =
         subjArray[Math.floor(Math.random() * subjArray.length)] +
@@ -209,14 +209,20 @@ genBtn.addEventListener("click", (event) => {
         actArray[Math.floor(Math.random() * actArray.length)];
     } else if (selector === 1) {
       bulletPoints[i].textContent = `${
-        objArray[Math.floor(Math.random() * objArray.length)]
+        subjArray[Math.floor(Math.random() * subjArray.length)]
       } ${comArray[Math.floor(Math.random() * comArray.length)]} ${
         denyArray[Math.floor(Math.random() * denyArray.length)]
       } ${prepArray[Math.floor(Math.random() * prepArray.length)]} ${
         actArray[Math.floor(Math.random() * actArray.length)]
-      }, man bør heller ${
+      }, vi vil heller ${
         actArray[Math.floor(Math.random() * actArray.length)]
       } i ${objArray[Math.floor(Math.random() * objArray.length)]}`;
+    } else if (selector === 2) {
+      bulletPoints[i].textContent = `${
+        objArray[Math.floor(Math.random() * objArray.length)]
+      } sies opp, erstattes med ${
+        objArray[Math.floor(Math.random() * objArray.length)]
+      }`;
     } else {
       bulletPoints[i].textContent = `Vi stiller oss bak ${
         subjArray[Math.floor(Math.random() * subjArray.length)]
