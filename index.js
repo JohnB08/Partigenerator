@@ -65,7 +65,7 @@ const subjArray = [
   "Venstre",
   "Høyre",
   "FRP",
-  "Streamingtjenester",
+  "Kinesiske Streamingtjenester",
   "Navere",
   "Natur og Ungdom",
   "Entrepenører",
@@ -80,6 +80,8 @@ const subjArray = [
   "Den Norske Bank",
   "Heimevernet",
   "Hæren",
+  "Bompengeselskap",
+  "Offentlig transport",
   "",
 ];
 const objArray = [
@@ -92,6 +94,10 @@ const objArray = [
   "Polititjenesten",
   "Sikkerhetstjenesten",
   "UDI",
+  "Offentlig Transport",
+  "kirkeasylet",
+  "Bompengepolitikk",
+  "Privatisering av bompenger",
   "Fritt Ord",
   "Dagbladet",
   "VG",
@@ -147,7 +153,7 @@ const prepArray = [
   "",
   "unngå å",
   "huske å",
-  "ønske å",
+  "ha et ønske om å",
   "ha en drøm om å",
   "oppfordres til å",
   "",
@@ -160,7 +166,7 @@ const actArray = [
   "bruke mindre penger",
   "betale mer skatt",
   "kjøpe utenlands mat",
-  "kjøpe bare norsk mat",
+  "kjøpe norsk mat",
   "bli værende",
   "ha mer makt",
   "ha mindre makt",
@@ -180,8 +186,8 @@ const actArray = [
   "oppfordre til mer makt",
   "hyre inn",
   "gå av",
-  "kjøre mindre bil",
-  "kjøre mer bil",
+  "ha mindre bilbruk",
+  "ha mere bilbruk",
   "bruke mindre penger på reise",
   "bruke mer penger på reise",
   "åpne for nye prosjekter",
@@ -248,7 +254,7 @@ genBtn.addEventListener("click", (event) => {
         actArray[Math.floor(Math.random() * actArray.length)]
       }, vi vil heller ${
         actArray[Math.floor(Math.random() * actArray.length)]
-      } i ${objArray[Math.floor(Math.random() * objArray.length)]}`;
+      } for ${objArray[Math.floor(Math.random() * objArray.length)]}`;
     } else if (selector === 2) {
       bulletPoints[i].textContent = `${
         objArray[Math.floor(Math.random() * objArray.length)]
