@@ -223,7 +223,7 @@ genBtn.addEventListener("click", (event) => {
     comArray[Math.floor(Math.random() * comArray.length)]
   } ${denyArray[Math.floor(Math.random() * denyArray.length)]} ${
     extArray[Math.floor(Math.random() * extArray.length)]
-  }, bare ${
+  } og er derfor ABSOLUTT! Bare ${
     sinArray[Math.floor(Math.random() * sinArray.length)]
   } er straffbart`;
   for (let i = 0; i < bulletNr.value - 1; i++) {
