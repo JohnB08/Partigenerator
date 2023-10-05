@@ -42,7 +42,10 @@ main {
 .bulletcontainer {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.5em;
+}
+.main label {
+  font-weight: bold;
 }
 .main input {
   border: 0.2em solid #2b2d42;
