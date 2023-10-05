@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+    <title>Partiprogramgenerator</title>
+  </head>
+  <body>
+    <main>
+      <div class="main">
+        <h1>Sliter du å finne parti identitet?</h1>
+        <p class="desc">
+          I dagens identitetspolitiske verden, kan det være vanskelig å vite hva
+          du står for. <span class="help">La oss hjelpe deg!</span>
+        </p>
+        <div class="navnecontainer">
+          <label for="Partinavn">Hva er ditt partinavn?</label>
+          <input type="text" name="Partinavn" id="Partinavn" />
+        </div>
+        <div class="bulletcontainer">
+          <label for="Bulletpoints"
+            >Hvor mange bulletpoints vil du ha? Maks 10!</label
+          ><input type="number" name="Bulletpoints" id="Bulletnr" />
+        </div>
+        <button id="Generer">Generer Partiprogram!</button>
+      </div>
+      <div class="main2">
+        <h1 id="Navn"></h1>
+        <ul class="partiprogram">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

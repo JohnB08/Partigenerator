@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #2b2d42;
+  box-sizing: border-box;
+  font-family: "Schibsted Grotesk", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: #d90429;
+}
+main {
+  width: 80vw;
+  height: 80vh;
+  display: inherit;
+  grid-template-columns: 1fr 1fr;
+  background: #edf2f4;
+  padding: 5%;
+  border-radius: 5em;
+  box-shadow: 20px 20px 0 #2b2d42;
+  gap: 5%;
+}
+.main,
+.main2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+}
+.main {
+  line-height: 1.5em;
+}
+
+.help {
+  display: block;
+  font-weight: bold;
+}
+.navnecontainer,
+.bulletcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.main input {
+  border: 0.2em solid #2b2d42;
+  padding: 0.2em 1em;
+  border-radius: 1em;
+}
+.main button {
+  background: #2b2d42;
+  padding: 0.5em;
+  width: 100%;
+  color: #edf2f4;
+  font-size: 20px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 0.5em;
+  transition: 0.5s;
+}
+.main button:hover {
+  cursor: pointer;
+  background: #d90429;
+}
+.main2 {
+  height: 90%;
+  background: #2b2d42;
+  align-self: center;
+  padding: 5%;
+  border-radius: 2em;
+  box-shadow: 2em 2em 0 #d90429;
+}
+.main2 h1 {
+  color: #edf2f4;
+}
+.main2 .partiprogram {
+  list-style: none;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.main2 li {
+  color: #edf2f4;
+}
