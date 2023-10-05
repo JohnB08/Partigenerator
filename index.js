@@ -317,7 +317,7 @@ genBtn.addEventListener("click", (event) => {
     } else if (selector === 2) {
       bulletPoints[i].textContent = `❕  ${
         objArray[Math.floor(Math.random() * objArray.length)]
-      } sies opp, erstattes med ${
+      } avvikles, erstattes med ${
         objArray[Math.floor(Math.random() * objArray.length)]
       }`;
     } else {
