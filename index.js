@@ -5,6 +5,8 @@ let bulletPoints = document.querySelectorAll("li");
 let genNavn = document.getElementById("Navn");
 let yttringDesc = document.getElementById("Yttringsfrihet");
 let partyDesc = document.getElementById("formaal");
+
+//Arrays
 const subjArray = [
   "Menn",
   "Kvinner",
@@ -261,10 +263,13 @@ const politikkArray = [
 /* console.log(subjArray);
 console.log(Math.floor(Math.random() * subjArray.length)); */
 /* console.log(bulletPoints); */
+
+//button
 genBtn.addEventListener("click", (event) => {
   genNavn.textContent = partiNavn.value;
   subjArray.pop();
   subjArray.push(partiNavn.value);
+  //Constant content
   partyDesc.textContent = `Vi er ${
     partiNavn.value
   } og ble dannet i '9${Math.floor(
@@ -279,7 +284,7 @@ genBtn.addEventListener("click", (event) => {
     politikkArray[Math.floor(Math.random() * politikkArray.length)]
   }. Vi ønsker jo, som tradisjonen sier, at norsk kultur kun skal baseres på ${
     landArray[Math.floor(Math.random() * landArray.length)]
-  }'s kultur, som alle var enig om i Riksforsamlingen i 1814.
+  }s kultur, som alle var enig om i Riksforsamlingen i 1814.
   Se gjerne på punktene våres nedenfor, og vi håper vi også kan gi noen en stemme!`;
   yttringDesc.textContent = `❕  Yttringsfriheten ${
     comArray[Math.floor(Math.random() * comArray.length)]
@@ -288,8 +293,10 @@ genBtn.addEventListener("click", (event) => {
   } og er derfor ABSOLUTT! Bare ${
     sinArray[Math.floor(Math.random() * sinArray.length)]
   } er straffbart  ❕`;
+  //list content
   for (let i = 0; i < bulletNr.value - 1; i++) {
     selector = Math.floor(Math.random() * 4);
+    /* selector decides which sentence structure is being used. */
     if (selector === 0) {
       bulletPoints[i].textContent =
         "❕" +
