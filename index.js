@@ -177,8 +177,8 @@ const actArray = [
   "balansere budskjettet",
   "bruke mindre penger",
   "betale mer skatt",
-  "kjøpe utenlands mat",
-  "kjøpe norsk mat",
+  "bruke eksperthjelp",
+  "la amatører",
   "bli værende",
   "ha mer makt",
   "ha mindre makt",
@@ -193,7 +193,7 @@ const actArray = [
   "fjernes",
   "bli hørt",
   "inkludere",
-  "Ekskludere",
+  "ekskludere",
   "overta",
   "avvikles",
   "fraråde mer makt",
@@ -279,7 +279,7 @@ genBtn.addEventListener("click", (event) => {
       bulletPoints[i].textContent = `Vi stiller oss bak ${
         subjArray[Math.floor(Math.random() * subjArray.length)]
       } sitt forslag om at ${
-        objArray[Math.floor(Math.random() * objArray.length)]
+        subjArray[Math.floor(Math.random() * subjArray.length)]
       } ${denyArray[Math.floor(Math.random() * denyArray.length)]} ${
         comArray[Math.floor(Math.random() * comArray.length)]
       } ${prepArray[Math.floor(Math.random() * prepArray.length)]} ${
