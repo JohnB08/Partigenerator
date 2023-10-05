@@ -313,7 +313,7 @@ genBtn.addEventListener("click", (event) => {
         actArray[Math.floor(Math.random() * actArray.length)]
       }, vi vil heller ${
         actArray[Math.floor(Math.random() * actArray.length)]
-      } for ${objArray[Math.floor(Math.random() * objArray.length)]}`;
+      } angående ${objArray[Math.floor(Math.random() * objArray.length)]}`;
     } else if (selector === 2) {
       bulletPoints[i].textContent = `❕  ${
         objArray[Math.floor(Math.random() * objArray.length)]
