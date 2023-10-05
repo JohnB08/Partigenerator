@@ -82,7 +82,8 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
 }
-.main2 li {
+.main2 li,
+.main2 p {
   color: #edf2f4;
 }
 @media only screen and (max-width: 1000px) {

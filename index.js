@@ -3,6 +3,7 @@ let partiNavn = document.getElementById("Partinavn");
 let bulletNr = document.getElementById("Bulletnr");
 let bulletPoints = document.querySelectorAll("li");
 let genNavn = document.getElementById("Navn");
+let yttringDesc = document.getElementById("Yttringsfrihet");
 const subjArray = [
   "Menn",
   "Kvinner",
@@ -92,7 +93,6 @@ const objArray = [
   "Sikkerhetstjenesten",
   "UDI",
   "Fritt Ord",
-  "Yttringsfrihet",
   "Dagbladet",
   "VG",
   "NRK",
@@ -187,6 +187,31 @@ const actArray = [
   "åpne for nye prosjekter",
   "sammarbeide",
 ];
+const landArray = [
+  "Norge",
+  "Sverige",
+  "Danmark",
+  "England",
+  "Finland",
+  "Russland",
+  "U.S.A",
+];
+const extArray = [
+  `fjernes`,
+  `taes vekk`,
+  `tukles med`,
+  `helliggjøres`,
+  `bli styrt av ${landArray[Math.floor(Math.random() * landArray.length)]}`,
+];
+const sinArray = [
+  "LØGN",
+  "MOBBING",
+  "TRAKASERING",
+  "MUNNLIG MISSBRUK",
+  "WRONGTHINK",
+  "RIGHTTHINK",
+  "norskbruk",
+];
 /* console.log(subjArray);
 console.log(Math.floor(Math.random() * subjArray.length)); */
 /* console.log(bulletPoints); */
@@ -194,7 +219,14 @@ genBtn.addEventListener("click", (event) => {
   genNavn.textContent = partiNavn.value;
   subjArray.pop();
   subjArray.push(partiNavn.value);
-  for (let i = 0; i < bulletNr.value; i++) {
+  yttringDesc.textContent = `Yttringsfriheten ${
+    comArray[Math.floor(Math.random() * comArray.length)]
+  } ${denyArray[Math.floor(Math.random() * denyArray.length)]} ${
+    extArray[Math.floor(Math.random() * extArray.length)]
+  }, bare ${
+    sinArray[Math.floor(Math.random() * sinArray.length)]
+  } er straffbart`;
+  for (let i = 0; i < bulletNr.value - 1; i++) {
     selector = Math.floor(Math.random() * 4);
     if (selector === 0) {
       bulletPoints[i].textContent =
