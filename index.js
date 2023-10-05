@@ -277,9 +277,9 @@ genBtn.addEventListener("click", (event) => {
     partiArray[Math.floor(Math.random() * partiArray.length)]
   } ang ${
     politikkArray[Math.floor(Math.random() * politikkArray.length)]
-  }. Vi ønsker jo tradisjonen sier, at norsk kultur kun skal baseres på ${
+  }. Vi ønsker jo, som tradisjonen sier, at norsk kultur kun skal baseres på ${
     landArray[Math.floor(Math.random() * landArray.length)]
-  }, som alle var enig om i Riksforsamlingen i 1814.
+  }'s kultur, som alle var enig om i Riksforsamlingen i 1814.
   Se gjerne på punktene våres nedenfor, og vi håper vi også kan gi noen en stemme!`;
   yttringDesc.textContent = `❕  Yttringsfriheten ${
     comArray[Math.floor(Math.random() * comArray.length)]
