@@ -85,3 +85,17 @@ main {
 .main2 li {
   color: #edf2f4;
 }
+@media only screen and (max-width: 1000px) {
+  body {
+    height: 100vh;
+  }
+  main {
+    height: 100vh;
+    width: 100vw;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
